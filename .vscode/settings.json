@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "todo-backend/src",
+        "todobackend/src/main/java/com/example/todobackend"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
