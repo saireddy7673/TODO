@@ -9,6 +9,7 @@ import com.example.backend.repository.TodoRepo;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/todos")
 public class TodoController {
