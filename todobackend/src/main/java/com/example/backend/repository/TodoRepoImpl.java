@@ -15,6 +15,7 @@ public class TodoRepoImpl implements TodoRepo {
     
     @Override
     public Todo saveTodo(Todo todo) {
+        todo.setId(String.valueOf(idCounter));
         todoStore.put(idCounter++, todo);
         return todo;
     }
@@ -26,7 +27,7 @@ public class TodoRepoImpl implements TodoRepo {
 
     @Override
     public List<Todo> getAllTodos() {
-       return new java.util.ArrayList<>(todoStore.values());
+        return new java.util.ArrayList<>(todoStore.values());
     }
 
 }

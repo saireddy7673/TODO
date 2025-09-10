@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/todos")
+@CrossOrigin(origins = "http://localhost:3000") // Allow React app to access the API
 public class TodoController {
     
     @Autowired
